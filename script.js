@@ -24,7 +24,6 @@ const listPageElement = document.getElementById('list-page');
 
 let numberList = '<ul>'
 
-console.log(numberList);
 
 // * Creo un ciclo for per generare gli <li> con dentro i numeri / Create a for cycle and generate <li> elements
 
@@ -35,13 +34,14 @@ for (i = 1; i <= 100; i++) {
 
 
     if (i % 3 === 0 && i % 5 !== 0) {
-        numberList += `<li> Fizz </li>`;
+        numberList += `<li class="text-red"> Fizz </li>`;
+
 
     } else if (i % 5 === 0 && i % 3 !== 0) {
-        numberList += `<li> Buzz </li>`;
+        numberList += `<li class="text-blue"> Buzz </li>`;
 
     } else if (i % 3 === 0 && i % 5 === 0) {
-        numberList += `<li> FizzBuzz </li>`;
+        numberList += `<li class="text-green"> FizzBuzz </li>`;
 
     } else {
         numberList += `<li> ${i} </li>`;

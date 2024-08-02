@@ -18,3 +18,15 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.text-red {
+    color: red;
+}
+
+.text-blue {
+    color: aqua;
+}
+
+.text-green {
+    color: greenyellow;
+}
