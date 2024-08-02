@@ -5,10 +5,17 @@ Creo una variabile per l'Ul / Create a <ul> var
 Creo un ciclo for per generare gli <li> con dentro i numeri / Create a for cycle and generate <li> elements
 Aggiungo le condizioni per i multipli / Add if for multiplies    
 Stampo in console / Console output
+
+Milestone 2 = // * M2
  */
 
 
 // # STAGING
+
+// * M2
+
+const listPageElement = document.getElementById('list-page');
+
 // # GATHERING DATA
 // # EVENT HANDLING
 // # PROCESSING
@@ -20,7 +27,6 @@ let numberList = '<ul>'
 console.log(numberList);
 
 // * Creo un ciclo for per generare gli <li> con dentro i numeri / Create a for cycle and generate <li> elements
-
 
 
 for (i = 1; i <= 100; i++) {
@@ -46,14 +52,7 @@ for (i = 1; i <= 100; i++) {
 
 // # OUTPUT
 
-console.log(numberList)
+// * M2
 
-// if (i % 3 === 0) {
-//     numberList += `<li> Fizz </li>`;
-// }
-// if (i % 5 === 0) {
-//     numberList += `<li> Buzz </li>`;
-// }
-// if (i % 3 === 0 && i % 5 === 0) {
-//     numberList += `<li> FizzBuzz </li>`;
-// }
+listPageElement.innerHTML = numberList;
+
